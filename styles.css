@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    border: 1px solid #00a0b1;
+    width: 80%; /* Ajusta el ancho del formulario según tus necesidades */
+    max-width: 500px; /* Establece un ancho máximo para evitar que el formulario sea demasiado ancho en pantallas grandes */
+}
+
+input{
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #00a0b1 ;
+}
+
+button {
+    background-color: #00a0b1;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 100vh;
+    }
+    .logo {
+        width: 80%;
+        max-width: 350px; /* Ajusta el tamaño del logo según tus necesidades */
+        margin-bottom: 20px;
+    }.login-form{
+        width: 90%;
+    }
+}
